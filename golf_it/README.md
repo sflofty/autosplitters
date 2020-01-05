@@ -14,7 +14,7 @@ IMPORTANT: If you have auto-reset enabled, exiting to the main menu resets the r
 When split-on-map is enabled, the scripts splits, when a hole with the number 18 is finished, therefore this only works on maps where the number of the last hole is 18.
 
 ## Installing
- 1. Download the current verion of the script [`golf_it.asl`](https://github.com/sflofty/autosplitters/releases)
- 2. Open LiveSplit > Edit Layout 
- 3. Add Control > Scriptable AutoSplitter
- 4. Browse for `golf_it.asl`
+ 1. Open LiveSplit > right click > `Edit Splits`
+ 2. Set the Game to `Golf It!`
+ 3. Press `Activate`
+ 4. Press `Settings` to customize automation for start, splitting, reset and all maps
