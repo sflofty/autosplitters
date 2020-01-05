@@ -9,12 +9,12 @@ The Script...
  ... splits, everytime you finish a Hole.
  ... resets, when you enter main menu. (you can disable this in the layout settings for the Scriptable AutoSplitter)
 
-## All Maps
+## All Maps (experimental)
 If you you want to use it for All Maps, make sure to not press "Exit" after you finish a Map, otherwise it will split the timer.
+The script will split after 18 Holes are finished. This is still experimental.
 
 ## Installing
- 1. Open the current verions of the script [under this link](https://raw.githubusercontent.com/sflofty/autosplitters/master/golf_it/golf_it.asl).
- 2. Right Click on the text and Save Anywhere on the PC with file ending "golf_it.asl"
- 3. Open LiveSplit > Edit Layout 
- 4. Add Control > Scriptable AutoSplitter
- 5. Browse for the file you just saved.
+ 1. Download the current verion of the script [`golf_it.asl`](https://github.com/sflofty/autosplitters/releases)
+ 2. Open LiveSplit > Edit Layout 
+ 3. Add Control > Scriptable AutoSplitter
+ 4. Browse for `golf_it.asl`
