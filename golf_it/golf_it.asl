@@ -14,9 +14,7 @@ state("GolfIt-Win64-Shipping") {
 	int game_state : "GolfIt-Win64-Shipping.exe", 0x02D220B0, 0x0, 0x4A8, 0x50, 0x68, 0x710;
 }
 
-startup {
-	settings.Add("auto_reset", true, "Enable auto reset (when entering main menu)");
-	
+startup {	
 	//actually splits after 18 Holes
 	settings.Add("split_on_map", false, "Split only when a map is finished");
 	
@@ -39,10 +37,8 @@ start {
 //}
 
 reset {
-	if(settings["auto_reset"]) {
-		if(current.game_state == 0 && old.game_state == 9) {
-			return true;
-		}
+	if(current.game_state == 0 && old.game_state == 9) {
+		return true;
 	}
 }
 
