@@ -18,6 +18,7 @@ state("GolfIt-Win64-Shipping") {
 startup {	
 	//splits when the 18th hole of a map is finished
 	settings.Add("split_on_map", false, "Split only when a map is finished (Only works on maps where the number of the last Hole is 18)");
+	settings.Add("pause_when_loading", false, "Pause the timer when the game is loading");
 }
  
 start {
@@ -34,6 +35,10 @@ update {
 }
 
 isLoading {
+	if(!settings["pause_when_loading"]) {
+		vars.loading = false;
+		return vars.loading;
+	}
 	
 	//4 = stroke_count is visible
 	if (current.strokes_visible == 4) {
