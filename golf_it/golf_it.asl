@@ -3,10 +3,10 @@
 
 state("GolfIt-Win64-Shipping") {
 	//this increases, when finishing a Hole (at the moment the stroke-counter goes invisible)
-	int hole_counter : "GolfIt-Win64-Shipping.exe", 0x02DCC3E0, 0x90, 0x0, 0x1E8;
+	int hole_counter : "GolfIt-Win64-Shipping.exe", 0x02DCC4E0, 0x90, 0x0, 0x1E8;
 	
 	//game state: lobby=12, ingame=9, other=0
-	int game_state : "GolfIt-Win64-Shipping.exe", 0x02EC2000, 0x68, 0x7A0;
+	int game_state : "GolfIt-Win64-Shipping.exe", 0x02EC2100, 0x68, 0x7A0;
 	
 	//not ready: 12, ready: 16
 	//int ready : "GolfIt-Win64-Shipping.exe", 0x02EA3298, 0x718, 0x30, 0xC0, 0x1E8, 0x530, 0xCE0;
