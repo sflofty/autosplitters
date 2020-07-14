@@ -10,10 +10,10 @@ This is an AutoSplitter script for [LiveSplit](https://github.com/LiveSplit/Live
 
 ## How the script works
 
-* **Start:** When pressing "Start Match" the game state in _Golf It!_ changes to **9**. The script detects this and starts the timer.
-* **Split:** Everytime you finish a hole, a certain variable in _Golf It!_ increases. The script detects this and splits the timer. 
-* **Reset:** When entering the main menu the game state in _Golf It!_ changes to **0**. The script detects this and resets the timer. Be careful when doing a 100% to not press "Exit" after completing a map. You might want to disable this option when doing a 100% run.
-* **Game Timer:**  The Game Timer stops, as soon as a hole is registered as completed (see _Split_). When entering a new hole, the in-game timer in the top right corner resets (_default 02:00 min_). This reset can be detected as an **increase** and the script resumes the Game Timer.
+* **Start:** When pressing "Start Match" `game_state` changes to **1**. The script detects this and starts the timer.
+* **Split:** Everytime you finish a hole `game_state` changes to **3**. The script detects this, splits the timer and stops the _ingame_ timer. 
+* **Game Timer:** When every player is finished loading the hole `game_state` changes to **2**. The script detects this restarts the _ingame_ timer. 
+* **Reset:** When entering the main menu `game_state` changes to **0**. The script detects this and resets the timer. Resetting is deactivated, while the setting `"Split only every 18 holes"` is activated. This is to prevent accidental resets, while doing a all-maps run. 
 
 #### Additional Settings
-* _"Split only every 18 holes"_: With this activated, the script only splits every 18 holes. This is for when you only want to split on map completion in a 100% run.
+* _"Split only every 18 holes"_: With this activated, the script only splits when a map is finished. This is for when you only want to split on map completion in a 100% run.
