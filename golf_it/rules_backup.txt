@@ -1,0 +1,69 @@
+These rules apply in addition to the rules listed in the "Category Rules" tab.
+
+##Settings
+Host a game with the following settings (Must be shown):  
+ • Strokes: *as you like*  
+ • Time Limit: *as you like*  
+ • Game Mode: *depends on category*  
+ • Tick Rate: 8  
+ • Collision: Off  
+ • Auto Scoreboard: Off  
+ • Spectator: Off
+
+##Timing
+ • Timer begins on clicking "Start Match"  
+ • Timer ends once the stroke-count in the bottom right corner disappears on the final hole (18)
+
+*There is an autosplitter for you to use in LiveSplit, which also records your ingame time (right click on LiveSplit > Edit Splits > Game Time > Split Time). However this is not mandatory.*
+
+##Completion
+ • All holes must be completed by every runner for a run to count (18 holes per map)  
+ • If the stroke limit is reached by a single runner, or the timer runs out the run will not count
+
+##Controls
+The usage of alternative shooting (controller) is prohibited.
+
+##Submission
+• Submit a video of the the run, including a timer  
+• Make sure the stroke counter in the bottom right is visible  
+• If you are using an autosplitter, you are free to both include realtime and in-game time of your run (right click in LiveSplit > Edit Splits > Game Time)  
+• You are allowed to submit a single run to different categories, as long as the segment in question is timed (You can add segment times in LiveSplit under Edit Layout > Splits > Add Coulumn)
+
+
+
+
+
+Classic: 
+These rules apply in addition to the rules listed in the "Game Rules" tab.
+
+##Classic Mode
+• Settings: Please set the Game Mode to **Classic**  
+• Playercount: Must be run **Solo**
+
+
+Hard: 
+These rules apply in addition to the rules listed in the "Game Rules" tab.
+
+##Hard Mode
+
+• Settings: Please set the Game Mode to **Hard**  
+• Cosmetics: The usage of a hat is prohibited. This is to prevent runners using a hat, that would serve as a replacement for the missing shooting indicator  
+• Playercount: Must be run **Solo**
+
+
+Co-Op:
+These rules apply in addition to the rules listed in the "Game Rules" tab.
+
+##Co-Op
+
+• Settings: Please set the Game Mode to **Classic** or **Hard**  
+• Cosmetics: If set to **Hard**, the usage of a hat is prohibited. This is to prevent runners using a hat, that would serve as a replacement for the missing shooting indicator  
+• Playercount: Must be run with **two or more players**
+
+
+
+All-Maps:
+
+#All Maps
+• Complete all holes on all maps of the category  
+• The order of maps does not matter
