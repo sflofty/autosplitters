@@ -1,6 +1,6 @@
 state("GolfIt-Win64-Shipping") {
 	//menu: 0, start: 1, loading_finished:2, hole_finished:3, map_finished: 4
-	int game_state : "GolfIt-Win64-Shipping.exe", 0x04C52E68, 0x58, 0xD18;
+	int game_state : "GolfIt-Win64-Shipping.exe", 0x04CAE998, 0x188, 0xD18;
 }
 
 startup {	
