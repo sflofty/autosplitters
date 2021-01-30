@@ -21,29 +21,35 @@ isLoading {
 }
 
 reset {
-	//reset, when exiting to main menu from ingame (game_state = 0)
-	if(current.game_state == 0 && old.game_state != 0) {
-		//disable reset, when running all-maps, because runners might enter main menu, when selecting a new map
+
+	//reset, when exiting to main menu or lobby (game_state = 0)
+	if(current.game_state == 0 && old.game_state != 0){
+		
+		//disable reset when running all-maps
 		if(!settings["split_on_map"]) return true;
 	}
+	
 	return false;
 }
 
 split {
-	//gets triggered, when a hole or map is finished (state 3 and 4)
-	if (current.game_state >= 3 && old.game_state < 3) {
+
+	if (current.game_state != old.game_state) {
+		print("LS: " + old.game_state + " --> " + current.game_state);
+	}
+
+	//hole finished (state 3 or 4)
+	if (current.game_state >= 3 && old.game_state == 2) {
 	
-		//
+		vars.loading = true;
+		
+		//split on hole (setting deactivated) or on map (state = 4)
 		if(!settings["split_on_map"]) {
-			vars.loading = true;
 			return true;
-		} else {
-			if (current.game_state == 4) {
-				vars.loading = true;
-				return true;
-			}
+		}else if(current.game_state == 4) {
+			return true;
 		}
 	}
-	
+
 	return false;
 }
